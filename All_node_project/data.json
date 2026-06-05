@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Sonal",
+    "age": 25,
+    "skills": ["Node.js", "React", "MongoDB"]
+  },
+  {
+    "name": "Alice",
+    "age": 30,
+    "skills": ["Python", "Django", "PostgreSQL"]
+  },
+  {
+    "name": "Bob",
+    "age": 28,
+    "skills": ["Java", "Spring", "MySQL"]
+  },
+  {
+    "name": "Charlie",
+    "age": 35,
+    "skills": ["Go", "Gin", "Redis"]
+  }
+]
