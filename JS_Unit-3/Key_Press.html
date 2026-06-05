@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key press</title>
+</head>
+<body>
+    <p>Press any key to see the current date: </p>
+    <input type="text" id="key">
+
+    <script>
+        let a = document.getElementById("key");
+        a.addEventListener("keypress",()=>{
+            let press = new Date;
+            alert(press);
+        })
+    </script>
+</body>
+</html>

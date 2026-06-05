@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+    <script>
+        function performOperations() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+
+            if(num1 >= num2){
+
+                num1--;
+                num2++;
+                document.getElementById("disp").innerHTML="Number 1 is " +num1+ " number 2 is " +num2+ "\n Number1 is greater than or equal to number 2 ";
+            }else{
+                num2--;
+                num1++;
+                document.getElementById("disp").innerHTML="Number 1 is " +num1+ " number 2 is " +num2+ "\n Number1 is not greater than or equal to number 2";
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        input{
+            margin: 10px;
+            padding: 5px;
+        }
+        input::after{
+            content: "Enter a number";
+        }
+        button{
+            padding: 5px 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(13, 115, 32);
+        }
+    </style>
+
+           </head>
+<body>
+    <input type="text" id="num1" placeholder="Enter first number"><br>
+    <input type="text" id="num2" placeholder="Enter second number"><br>
+    <button onclick="performOperations()">Display</button> 
+    <p id="disp"></p>
+</body>
+</html>

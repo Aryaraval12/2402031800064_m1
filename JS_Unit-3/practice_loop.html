@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of loops</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Practice of Loops</h1>
+        <div class="row mt-5">
+            <div class="box col-4">
+                <div class="form-action">
+                    <h4>click here to print number</h4>
+                    <label for="num">Enter a number:</label>
+                    <input type="text" id="num" class="form-control" placeholder="Enter a number">
+                    <button class="btn btn-primary mt-3" onclick="p1()">Click here</button>
+                    <p id="result"></p>
+                </div>
+            </div>
+            <div class="col-4">
+                
+                <div class="form-control">
+                    <h5>Click Here to check names using array</h5>
+                    <button class="btn btn-primary" onclick="names()">Click here</button>
+                    <p id="namesResult"></p>
+                </div>
+            </div>
+            <div class="col-4">
+                
+                <div class="form-control">
+                    <h4>Click Here to check total marks</h4>
+                    <button class="btn btn-primary" onclick="total_marks()">Click here</button>
+                    <p id="tableMarks"></p>
+                </div>
+        </div>
+        
+
+    </div>
+</div><hr style="border:5px solid black" >
+    <div class="containetr-fluid mt-5">
+        <div class="row">
+            <div class="col-4">
+                <div class="form-control">
+                    <h4>click here to check multiplication table</h4>
+                    <label for="num1">Enter a number:</label>
+                    <input type="text" id="num1" class="form-control" placeholder="Enter a number">
+                    <button class="btn btn-primary" onclick="multi_table()">Click here</button>
+                    <p id="tableResult"></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-control">
+                    <h4>click here to show factorial series</h4>
+                    <label for="num2">Enter a number:</label>
+                    <input type="text" id="num2" class="form-control" placeholder="Enter a number">
+                    <button class="btn btn-primary" onclick="factorial()">Click here</button>
+                    <p id="factorialResult"></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-control">
+                    <h4>click here to check fibonacci series</h4>
+                    <label for="num3">Enter a number:</label>
+                    <input type="text" id="num3" class="form-control" placeholder="Enter a number">
+                    <button class="btn btn-primary" onclick="fibonacci()">Click here</button>
+                    <p id="fibonacciResult"></p>
+                </div>
+            </div>
+        </div>
+    </div><hr style="border:5px solid black" >
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-3">
+                
+                <div class="form-control">
+                    <h4>Click here to check correct pin</h4>
+                    <label for="val">Enter a number:</label>
+                    <input type="password" id="val" class="form-control mt-3" placeholder="Enter a pin">
+                    <input type="password" id="val2" class="form-control mt-3" placeholder="ReEnter pin">
+                    <button class="btn btn-primary mt-3" onclick="checkpin()">Click here</button>
+                    <p id="displayPin"></p>
+                </div>
+            </div>
+            <div class="col-3">
+                <h4>click here to check even num</h4>
+                <label for="num4">Enter a number:</label>
+                <input type="text" id="num4" class="form-control" placeholder="Enter a number">
+                <button class="btn btn-primary mt-3" onclick="evenNum()">Click here</button>
+                <p id="even_numResult"></p>
+            </div>
+            <div class="col-3">
+                <h4>click here to check odd num</h4>
+                <label for="num5">Enter a number:</label>
+                <input type="text" id="num5" class="form-control" placeholder="Enter a number">
+                <button class="btn btn-primary mt-3" onclick="oddNum()">Click here</button>
+                <p id="odd_numResult"></p>
+            </div>
+            <div class="col-3">
+                <h4>Click to check Total Bill</h4>
+                    <div class="form-control>">
+                            <button class="btn btn-primary" onclick="total_bill()" >Click Here</button>
+                    </div>
+            </div>
+
+        </div><hr style="border:5px solid black">
+    </div>
+    
+</body>
+<script src="practice_loop.js"></script>
+</html>

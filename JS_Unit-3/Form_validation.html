@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script>
+        function checkdata() {
+           event.preventDefault();
+
+            let name3 = document.getElementById("name3").value.trim();
+            let deg = document.getElementById("degree").value;
+            let dob = document.getElementById("date").value;
+            let ema = document.getElementById("email").value;
+            let password = document.getElementById("pas").value;
+            let email_pat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            console.log(name3, deg, dob , ema , password);
+
+            if (name3 === "") {
+                alert("Please enter your First Name");
+                return false;
+            }
+
+            if (deg === "NULL") {
+                alert("Please select your Degree");
+                return false;
+            }
+
+            if (dob === "") {
+                alert("Please enter your Date of Birth");
+                return false;
+            }
+            if(!email_pat.test(ema)){
+                alert("Invalid Pattern of email ");
+                return false
+            }
+            if(password.length < 6){
+                alert("Password must be contain 6 characters .. ");
+            }
+
+            document.getElementById("run").innerHTML =
+                "<b class='text-success'>Form Submitted Successfully!</b>";
+        }
+    </script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row bg-dark" style="height:auto">
+        <div class="col"></div>
+
+        <div class="col bg-info rounded mt-3 p-4 mb-3">
+            <form onsubmit="checkdata()">
+                
+                <label class="form-label">First Name</label>
+                <input type="text" id="name3" class="form-control" placeholder="Enter First Name">
+
+                <br>
+
+                <label class="form-label">Degree</label>
+                <select id="degree" class="form-select">
+                    <option value="NULL">Select Your Degree</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                </select>
+
+                <br>
+                <label for="form-label">Email</label>
+                <input type="Email" id="email" class="form-control">
+                <br>
+
+                <label for="form-label">Passsword</label>
+                <input type="password" id="pas" placeholder="Enter Your Password" class="form-control">
+                <br>
+
+                <label class="form-label">Gender</label><br>
+                <input type="radio" name="g" value="male" checked> Male
+                <input type="radio" name="g" value="female" > Female
+
+                <br><br>
+
+                <label class="form-label">Date of Birth</label>
+                <input type="date" id="date" class="form-control">
+
+                <button type="submit" class="btn btn-dark mt-3 w-100">Submit</button>
+            </form>
+
+            <div class="text-center mt-3" id="run"></div>
+        </div>
+
+        <div class="col"></div>
+    </div>
+</div>
+</body>
+</html>

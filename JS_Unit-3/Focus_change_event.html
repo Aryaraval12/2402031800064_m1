@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event 1</title>
+
+</head>
+<body>
+    Select Product : <select name ="" id = "Product">
+        <option value=" ">--Select Product--</option>
+        <option value="45000">AC</option>
+        <option value="22000">TV</option>
+        <option value="15000">Refrigerator</option>
+        <option value="70000">Laptop</option>
+    </select> 
+    <br><br>
+    Net Price : <input type="text" id="Price"> <br><br>
+    Quantity : <input type="text" id="Quantity"><br><br>
+
+    total Amount : <input type="text" id="Amount">
+
+
+    <script>
+        let data = document.getElementById("Product");
+        let qua = document.getElementById("Quantity");
+        let amo = document.getElementById("Amount");
+        let price = document.getElementById("Price");
+
+        data.addEventListener("change",()=>{
+            price.value = Product.value;
+            alert("Value of Product  is "+price.value);
+        });
+
+        amo.addEventListener("focus" ,()=>{
+            amo.value = data.value * qua.value ;
+        });
+        
+    </script>
+</body>
+</html>

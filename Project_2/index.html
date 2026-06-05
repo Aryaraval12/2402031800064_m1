@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePro - Professional Home Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="fas fa-home text-warning me-2"></i>HomePro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#testimonials">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4 lh-1">Professional Home Services<br>At Your Doorstep</h1>
+                    <p class="lead text-muted mb-5">Get reliable cleaning, plumbing, electrical & more services from verified experts. Book instantly with guaranteed satisfaction!</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <button class="btn btn-warning btn-lg px-5 py-3 fw-semibold shadow-lg" id="bookNow">
+                            <i class="fas fa-bolt me-2"></i>Book Now
+                        </button>
+                        <button class="btn btn-outline-warning btn-lg px-5 py-3 fw-semibold" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })">
+                            View Services
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-illustration position-relative">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76bbb17e?w=500&h=500&fit=crop" alt="Home Services" class="img-fluid rounded-4 shadow-lg" style="max-height: 500px;">
+                        <div class="floating-badge position-absolute top-0 start-50 translate-middle-x bg-warning text-white rounded-pill px-4 py-2 shadow fw-semibold">
+                            50K+ Happy Customers
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Our Services</h2>
+                <p class="lead text-muted mb-0">Trusted home maintenance solutions by verified professionals</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow hover-shadow">
+                        <div class="card-body text-center p-5">
+                            <div class="service-icon mb-4 mx-auto rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="fas fa-broom fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">House Cleaning</h4>
+                            <p class="card-text text-muted mb-4">Deep cleaning, regular maintenance, move-in/out services by trained professionals</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Dusting & Vacuuming</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Bathroom Deep Clean</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Kitchen Sanitization</li>
+                            </ul>
+                            <button class="btn btn-warning w-100 fw-semibold py-3" onclick="bookService('cleaning')">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow hover-shadow">
+                        <div class="card-body text-center p-5">
+                            <div class="service-icon mb-4 mx-auto rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="fas fa-tools fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Plumbing</h4>
+                            <p class="card-text text-muted mb-4">Fix leaks, unclog drains, water heater repair by certified plumbers</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Leak Detection</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Pipe Repair</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Water Supply</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 fw-semibold py-3" onclick="bookService('plumbing')">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow hover-shadow">
+                        <div class="card-body text-center p-5">
+                            <div class="service-icon mb-4 mx-auto rounded-circle bg-success d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="fas fa-plug fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Electrical</h4>
+                            <p class="card-text text-muted mb-4">Wiring, fan installation, switchboard repair by licensed electricians</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>New Connections</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Repair Works</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Safety Check</li>
+                            </ul>
+                            <button class="btn btn-success w-100 fw-semibold py-3" onclick="bookService('electrical')">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4 lh-1">Why Choose<br>HomePro?</h2>
+                    <div class="feature-list">
+                        <div class="d-flex align-items-center mb-4 p-4 bg-white rounded-4 shadow-sm">
+                            <div class="feature-icon bg-primary bg-opacity-10 text-primary rounded-3 d-flex align-items-center justify-content-center me-4" style="width: 64px; height: 64px;">
+                                <i class="fas fa-shield-alt fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Verified Professionals</h5>
+                                <p class="mb-0 text-muted">Background checked experts with 5+ years experience</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4 p-4 bg-white rounded-4 shadow-sm">
+                            <div class="feature-icon bg-success bg-opacity-10 text-success rounded-3 d-flex align-items-center justify-content-center me-4" style="width: 64px; height: 64px;">
+                                <i class="fas fa-dollar-sign fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Transparent Pricing</h5>
+                                <p class="mb-0 text-muted">No hidden charges, fixed prices before booking</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4 p-4 bg-white rounded-4 shadow-sm">
+                            <div class="feature-icon bg-warning bg-opacity-10 text-warning rounded-3 d-flex align-items-center justify-content-center me-4" style="width: 64px; height: 64px;">
+                                <i class="fas fa-clock fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Quick Booking</h5>
+                                <p class="mb-0 text-muted">Get service professional within 60 minutes</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-4 bg-white rounded-4 shadow-sm">
+                            <div class="feature-icon bg-info bg-opacity-10 text-info rounded-3 d-flex align-items-center justify-content-center me-4" style="width: 64px; height: 64px;">
+                                <i class="fas fa-headset fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-2">24/7 Support</h5>
+                                <p class="mb-0 text-muted">Round the clock customer support available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stats-card bg-gradient text-white rounded-5 p-5 shadow-lg">
+                        <div class="row text-center g-4">
+                            <div class="col-md-4">
+                                <div class="stat-item">
+                                    <div class="display-4 fw-bold mb-2">10K+</div>
+                                    <div class="fs-6 opacity-90">Happy Customers</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-item">
+                                    <div class="display-4 fw-bold mb-2">50K+</div>
+                                    <div class="fs-6 opacity-90">Services Done</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-item">
+                                    <div class="display-4 fw-bold mb-2">500+</div>
+                                    <div class="fs-6 opacity-90">Expert Network</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">What Our Customers Say</h2>
+                <p class="lead text-muted">Thousands of happy customers trust HomePro</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card border-0 shadow-lg">
+                                    <div class="card-body p-5 text-center">
+                                        <div class="d-flex justify-content-center mb-4">
+                                            <i class="fas fa-star text-warning fs-4 me-1"></i>
+                                            <i class="fas fa-star text-warning fs-4 me-1"></i>
+                                            <i class="fas fa-star text-warning fs-4 me-1"></i>
+                                            <i class="fas fa-star text-warning fs-4 me-1"></i>
+                                            <i class="fas fa-star text-warning fs-4"></i>
+                                        </div>
+                                        <blockquote class="blockquote mb-4">
+                                            <p class="fs-4 fw-light lh-lg mb-0">"Excellent plumbing service! Technician arrived on time and fixed the leak perfectly. Very professional and clean work."</p>
+                                        </blockquote>
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-3">
+                                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face" alt="Priya Sharma" class="rounded-circle img-fluid mx-auto shadow-sm">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <h5 class="fw-bold mb-1">Priya Sharma</h5>
+                                                <p class="text-muted mb-0">Mumbai</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card border-0 shadow-lg">
+                                    <div class="card-body p-5 text-center">
+                                        <div class="d-flex justify-content-center mb-4">
+                                            <i class="fas fa-star text-warning fs-4 me-1"></i>
+                                            <i class="fas fa-star text-warning fs-4 me-1"></i>
+                                            <i class="fas fa-star text-warning fs-4 me-1"></i>
+                                            <i class="fas fa-star text-warning fs-4 me-1"></i>
+                                            <i class="fas fa-star text-warning fs-4"></i>
+                                        </div>
+                                        <blockquote class="blockquote mb-4">
+                                            <p class="fs-4 fw-light lh-lg mb-0">"AC service was outstanding. Quick response and great technician. Will definitely use again for all my home services!"</p>
+                                        </blockquote>
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-3">
+                                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Rahul Kumar" class="rounded-circle img-fluid mx-auto shadow-sm">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <h5 class="fw-bold mb-1">Rahul Kumar</h5>
+                                                <p class="text-muted mb-0">Delhi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0 pb-1">
+                    <h5 class="modal-title fw-bold" id="bookingTitle">Book Your Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="bookingForm">
+                        <div class="mb-4">
+                            <label for="serviceType" class="form-label fw-semibold">Service Type *</label>
+                            <select class="form-select form-select-lg" id="serviceType" required>
+                                <option value="">Select Service</option>
+                                <option value="cleaning">House Cleaning</option>
+                                <option value="plumbing">Plumbing</option>
+                                <option value="electrical">Electrical</option>
+                                <option value="painting">Painting</option>
+                                <option value="ac">AC Service</option>
+                                <option value="carpentry">Carpentry</option>
+                            </select>
+                        </div>
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <label for="customerName" class="form-label fw-semibold">Full Name *</label>
+                                <input type="text" class="form-control form-control-lg" id="customerName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phoneNumber" class="form-label fw-semibold">Phone Number *</label>
+                                <input type="tel" class="form-control form-control-lg" id="phoneNumber" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="address" class="form-label fw-semibold">Address *</label>
+                            <textarea class="form-control form-control-lg" id="address" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-5">
+                            <label for="preferredTime" class="form-label fw-semibold">Preferred Date & Time *</label>
+                            <input type="datetime-local" class="form-control form-control-lg" id="preferredTime" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold py-3 shadow-lg">
+                            <i class="fas fa-calendar-check me-2"></i>Confirm Booking
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4 text-warning">HomePro Services</h4>
+                    <p class="opacity-75 mb-4">Your trusted partner for all home services. Professional, reliable, affordable.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#services" class="text-white-50 text-decoration-none opacity-75 hover-text-white">Services</a></li>
+                        <li><a href="#about" class="text-white-50 text-decoration-none opacity-75 hover-text-white">About Us</a></li>
+                        <li><a href="#testimonials" class="text-white-50 text-decoration-none opacity-75 hover-text-white">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Popular Services</h5>
+                    <ul class="list-unstyled">
+                        <li><span class="text-white-50 opacity-75">House Cleaning</span></li>
+                        <li><span class="text-white-50 opacity-75">Plumbing</span></li>
+                        <li><span class="text-white-50 opacity-75">Electrical</span></li>
+                        <li><span class="text-white-50 opacity-75">AC Service</span></li>
+                    </ul>
+                </div>
+            <section class="col-lg-3 col-md-6 " id="contact">
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4">Contact Info</h5>
+                    <div class="mb-3">
+                        <i class="fas fa-phone text-warning me-3"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-envelope text-warning me-3"></i>
+                        <span>support@homepro.com</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt text-warning me-3"></i>
+                        <span>All Major Cities</span>
+                    </div>
+                </div>
+            </section>
+            </div>
+            <hr class="opacity-25 my-5">
+            <div class="text-center">
+                <p class="mb-0 opacity-75">&copy; 2024 HomePro Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function bookService(service) {
+            document.getElementById('bookingModal').querySelector('.modal-title').textContent = `Book ${service.charAt(0).toUpperCase() + service.slice(1)}`;
+            const serviceSelect = document.getElementById('serviceType');
+            serviceSelect.value = service;
+            new bootstrap.Modal(document.getElementById('bookingModal')).show();
+        }
+
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate booking success
+            const toast = document.createElement('div');
+            toast.innerHTML = `
+                <div class="toast-container position-fixed top-0 end-0 p-3">
+                    <div class="toast align-items-center text-white bg-success border-0" role="alert">
+                        <div class="d-flex">
+                            <div class="toast-body">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Booking confirmed! We'll call you shortly.
+                            </div>
+                            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(toast);
+            
+            const bsToast = new bootstrap.Toast(toast.querySelector('.toast'));
+            bsToast.show();
+            
+            setTimeout(() => toast.remove(), 5000);
+            
+            bootstrap.Modal.getInstance(document.getElementById('bookingModal')).hide();
+            this.reset();
+        });
+
+        document.getElementById('bookNow').addEventListener('click', function() {
+            bookService('cleaning');
+        });
+    </script>
+</body>
+</html>
+

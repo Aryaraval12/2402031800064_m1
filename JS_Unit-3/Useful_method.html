@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript String Methods Demo</title>
+</head>
+<body>
+  <h2>JavaScript String Methods</h2>
+  <div id="output"></div>
+
+  <script>
+    const str = " Hello World! JavaScript Demo ";
+    const str2 = " - Concatenated Text";
+
+    let result = "";
+
+    result += "charAt(6): " + str.charAt(6) + "<br>";
+    result += "concat: " + str.concat(str2) + "<br>";
+    result += "indexOf('World'): " + str.indexOf("World") + "<br>";
+    result += "lastIndexOf('o'): " + str.lastIndexOf("o") + "<br>";
+    result += "search('JavaScript'): " + str.search("JavaScript") + "<br>";
+    result += "match(/o/g): " + str.match(/o/g) + "<br>";
+    result += "replace('World','Universe'): " + str.replace("World","Universe") + "<br>";
+    result += "substr(7,5): " + str.substr(7,5) + "<br>";
+    result += "substring(7,12): " + str.substring(7,12) + "<br>";
+    result += "slice(7,12): " + str.slice(7,12) + "<br>";
+    result += "toLowerCase: " + str.toLowerCase() + "<br>";
+    result += "toLocaleLowerCase: " + str.toLocaleLowerCase() + "<br>";
+    result += "toUpperCase: " + str.toUpperCase() + "<br>";
+    result += "toLocaleUpperCase: " + str.toLocaleUpperCase() + "<br>";
+    result += "toString: " + str.toString() + "<br>";
+    result += "valueOf: " + str.valueOf() + "<br>";
+    result += "split(' '): " + str.split(" ") + "<br>";
+    result += "trim: '" + str.trim() + "'<br>";
+
+    document.getElementById("output").innerHTML = result;
+  </script>
+</body>
+</html>
