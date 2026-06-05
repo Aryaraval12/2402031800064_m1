@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>not function</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("p").not(".myfun").css({"font-family":"Georgia, serif",
+                                        "font-size":"25px"});
+            })
+        </script>
+    </head>
+    <body>
+        <p>Hello World!!</p>
+        <p class="myfun">Hello World!!</p>
+        <p class="myfun">Hello World!!</p>
+        <p>Hello World!!</p>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Remove function</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#container").remove();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container" style="border: 1px solid #000;" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia iusto tempora aliquam eveniet eligendi illum illo nam inventore obcaecati dolorem magni molestias suscipit laboriosam a vitae mollitia, non officiis harum?</div>
+        <br><br>
+        <button type="button">Click for remove text</button>
+    </body>
+</html>

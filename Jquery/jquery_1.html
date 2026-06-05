@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(e){
+            $("#btn1").click(function(){
+                $("#p1").text("Changed Document")
+                $("#p2").css({
+                    "color":"#ff7089",
+                    "font-size":"30px"
+                });
+            });
+            $("#btn").click(function(){
+                 $(".myclass").html("Visiting the website")
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1"> Click </button>
+    <p id = "p1"> Original docs </p>
+    <br>
+    <p id = "p2"> Learning the WebTech </p>
+    <button id="btn"> Click Here </button>
+    <div class="myclass"> Hello </div>
+    <div class="myclass"> Friends </div>
+</body>
+</html>

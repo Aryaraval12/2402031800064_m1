@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>First Practice</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 20px;
+    }
+    #feed {
+        width: 400px;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-y: auto;
+        max-height: 300px;
+    }
+    .item {
+        background: #033d3e;
+        margin-bottom: 8px;
+        padding: 8px;
+        border-radius: 4px;
+        display: none;
+    }
+        </style>
+    </head>
+    <body>
+        <h2>Real-time Feed Query</h2>
+        <div id="feed"></div>
+
+        <br><br><br>
+        <button type="button">Click Here</button>
+
+        <script>
+            $(document).ready(function(e){
+                let counter = 1;
+
+                function addNewitem(){
+                    const newitem = $("<div class='item'New update #"+counter+"</div>");
+                        $('#feed').append(newitem);
+                        newitem.slideDown(400).fadeIn(400);
+                        counter++;
+                }
+                setInterval(addNewitem,1000);
+                addNewitem();
+
+                $("button").click(function(e){
+                    $("#feed").stop(addNewitem());
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>scrollspy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section1">page 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section2">page 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section3">page 3</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+              <h1>page 1</h1>
+              <p>Hello</p>
+              <p>...</p>
+            </div>
+
+            <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+              <h1>page 2</h1>
+              <p>how are you</p>
+              <p>nice to meet you</p>
+            </div>
+
+            <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+              <h1>page 3</h1>
+              <p>Looking</p>
+              <p>Good</p>
+            </div>
+
+    </body>
+</html>
